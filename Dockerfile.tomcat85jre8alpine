@@ -1,0 +1,8 @@
+FROM tomcat:8.5-jre8-alpine
+RUN rm -fr webapps/ROOT; \
+    rm -fr webapps/docs; \
+    rm -fr webapps/examples; \
+    rm -fr webapps/host-manager \
+    rm -fr webapps/manager;
+COPY ROOT webapps/ROOT
+
